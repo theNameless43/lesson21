@@ -1,0 +1,62 @@
+body {
+    background-color: #5BE9D9;
+	font-size: 18px;
+	text-align: center;
+}
+
+.header{
+	font-weight: bold;
+}
+
+h1 {
+	margin: 10px 0 20px 0;
+	font-family: "Amiri Quran";
+	font-style: italic;
+}
+
+.row {
+	margin: 10px 0 0 0;
+	width: 100%;
+}
+
+.btn {
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+
+.modal-span {
+	text-align: center;
+}
+
+.task-col{
+	text-align: left;
+}
+
+.open{
+	color: yellow;
+}
+
+.in-progress{
+	color: green;
+}
+
+.checked{
+	color: #4B3B3B;
+}
+
+.high{
+	background-color: darkred;
+}
+
+.medium{
+	background-color: yellow;
+}
+
+.low{
+	background-color: greenyellow;
+}
+
+.checked-task{
+	color: #4B3B3B;
+	text-decoration: line-through;
+}

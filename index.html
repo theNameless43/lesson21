@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson21</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+       <div class="row">
+           <h1>My TODO List</h1>
+       </div>
+       <div class="row">
+           <form name="create">
+               <input type="text" placeholder="Add new task" name="text" class="input-task">
+               <button type="button" class="btn-outline-success" id="add">
+                   Submit
+               </button>
+           </form>
+       </div>
+       <div class="row header">
+           <div class="col-6 task-col">
+                <span>
+                    Task
+                </span>
+           </div>
+           <div class="col-2">
+                <span>
+                    Priority
+                </span>
+           </div>
+           <div class="col-2">
+                <span>
+                    Status
+                </span>
+           </div>
+           <div class="col-2">
+                <span>
+                    Action
+                </span>
+           </div>
+       </div>
+       <div class="row" id="tasks">
+
+       </div>
+        <br>
+       <div class="row send">
+           <button type="button" class="btn btn-outline-secondary">Vrelsu</button>
+       </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Delete task?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="yes">Yes</button>
+                    </div>
+                </div><!-- /.модальное окно-Содержание -->
+            </div><!-- /.модальное окно-диалог -->
+        </div><!-- /.модальное окно -->
+
+        <div class="modal fade bd-example-modal-sm" id="empty" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <span class="modal-span">Your field is empty!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<!--<script src="node_modules/popper.js/dist/popper.min.js"></script>-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/elements.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
